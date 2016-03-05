@@ -208,4 +208,12 @@ class TypesForTestingSupport {
   def ResolvedType genericResource() {
     resolver.resolve(Resource, SubclassOfResourceSupport.class)
   }
+
+  def ResolvedType typeForInheritedComplexType() {
+    resolver.resolve(InheritedComplexType)
+  }
+
+  def ResolvedType typeForComplexType() {
+    resolver.resolve(ComplexType)
+  }
 }
